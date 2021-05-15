@@ -503,7 +503,7 @@ footer .cp{
     padding-top: 15px;
     border-top: 1px solid gray;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 15px;
 }
 
