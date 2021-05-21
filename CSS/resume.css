@@ -349,7 +349,6 @@
     background: gray;
 }
 
-
 .portfolio ul{
     display: flex;
     justify-content: center;
@@ -403,10 +402,29 @@ form h1{
     margin-bottom: 50px;
 }
 
+form .forms{
+    text-align: center;
+}
+
 form .forms .frm-1 .fields{
     width: 100%;
     margin-bottom: 20px;
 }
+
+form .forms #success{
+    display: inline-block;
+    color: green;
+    background: rgb(232, 247, 232);
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+form .forms #success i{
+    margin-left: 10px;
+}
+
 
 form .forms .frm-1 .fields input,form .frm-2 textarea{
     width: 100%;

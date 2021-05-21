@@ -1,14 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamalesh's Resume</title>
+    <title>Kamalesh</title>
     <link rel="icon" href="./Images/kamal.jpeg">
     <link rel="stylesheet" type="text/css" href="./CSS/resume.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
     <div class="container" id="hme">
@@ -225,27 +225,31 @@
                 </div>
             </div>
         </div>
+        
+        <!-- <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {window.location='./index.html';}"></iframe> -->
 
-        <form method="POST" id="contact">
+        <form method="POST" id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScbQF9ZjVEFV0_Si1epOmcV1eYZq7TrEiL4K9-CtdBOFVrYaA/formResponse">
             <h1>Want to Ping Me ?</h1>
 
             <div class="forms" data-aos="fade-right">
+                <p id="success">Message sent successfully <i class="fas fa-check-square" aria-hidden="true"></i></p>
                 <div class="frm-1">
                     <div class="fields">
-                        <input type="text" required placeholder="Name *">
+                        <input type="text" id="name" required placeholder="Name *" name="entry.1557085568">
                     </div>
 
                     <div class="fields">
-                        <input type="email" required placeholder="Email *">
+                        <input type="email" id="mail" required placeholder="Email *" name="entry.1053142223">
                     </div>
 
                     <div class="fields">
-                        <input type="text" required placeholder="Mobile Number *">
+                        <input type="text" id="ph" required placeholder="Mobile Number *" name="entry.802367497">
                     </div>
                 </div>
 
                 <div class="frm-2">
-                    <textarea placeholder="Message *" rows="10" required></textarea>
+                    <textarea placeholder="Message *" id="msg" rows="10" required name="entry.1980512966"></textarea>
                 </div>
 
                 <div class="btn">

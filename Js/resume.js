@@ -49,3 +49,31 @@ function navigation(){
     bars.classList.toggle("active")
     nav.classList.toggle("active")
 }
+
+$('#contact').submit((e)=>{
+    e.preventDefault();
+    var formData = {
+        'entry.1557085568':$('#name').val(),
+        'entry.1053142223':$('#mail').val(),
+        'entry.802367497':$('#ph').val(),
+        'entry.1980512966':$('#msg').val(),
+    }
+
+    $.ajax({
+        type: 'POST',
+        url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScbQF9ZjVEFV0_Si1epOmcV1eYZq7TrEiL4K9-CtdBOFVrYaA/formResponse',
+        data: formData,
+        dataType: 'jsonp',
+        crossDomain: true,
+        dataType: "xml",
+        success: function (data) {
+        },
+        error: function (data) {
+            $('#success').css("display","block");
+            setTimeout(()=>{
+                $('#success').css("display","none");
+            },5000)
+        $('#contact').trigger('reset')
+        },
+    });
+})
