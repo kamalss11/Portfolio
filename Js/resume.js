@@ -50,6 +50,11 @@ function navigation(){
     nav.classList.toggle("active")
 }
 
+function close(){
+    nav.classList.remove("active")
+    bars.classList.remove("active")
+}
+
 $('#contact').submit((e)=>{
     e.preventDefault();
     var formData = {
