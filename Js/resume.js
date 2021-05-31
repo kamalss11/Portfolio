@@ -50,7 +50,7 @@ function navigation(){
     nav.classList.toggle("active")
 }
 
-function close(){
+function cls(){
     nav.classList.remove("active")
     bars.classList.remove("active")
 }
