@@ -132,8 +132,6 @@
 }
 
 .home .home-cntnt .content .resume{
-    position: absolute;
-    bottom: -37px;
     padding: 10px 25px;
     background: var(--pink);
     color: var(--white);
@@ -142,7 +140,7 @@
     cursor: pointer;
     margin: 0 9px;
     transition: .4s;
-    animation: bubble 1.5s infinite;
+    /* animation: bubble 1.5s infinite; */
 }
 
 @keyframes bubble{
